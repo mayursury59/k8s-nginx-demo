@@ -1,7 +1,7 @@
 FROM nginx:stable-alpine
 
 # Copy static website files into nginx html folder (optional)
-# COPY ./html /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html/index.html
 
 EXPOSE 80
 
